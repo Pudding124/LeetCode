@@ -23,6 +23,10 @@ class Node {
 
 class Solution {
     public Node connect(Node root) {
+        /*
+         * 使用 BFS 歷遍每一層節點，再將同一層節點，依序綁到 next 上
+         * 若無下一個節點則設為 null
+         */
         if(root == null) return root;
         ArrayList<Node> queue = new ArrayList<>();
         queue.add(root);
