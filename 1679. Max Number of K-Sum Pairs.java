@@ -1,6 +1,6 @@
 class Solution {
     public int maxOperations(int[] nums, int k) {
-        /* 由小排至大，故只需要檢查陣列前半段即可 */
+        /* 由小排至大，可藉由算出差值，進而減少縮小範圍 */
         Arrays.sort(nums);
         
         /* 收集不重複之數字 */
