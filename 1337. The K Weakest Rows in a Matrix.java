@@ -1,6 +1,6 @@
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
-        /* 記錄所有數字與對應的索引
+        /* 透過 TreeMap 會排序之特性，記錄所有數字與對應的索引
          * 最後再將紀錄的前 k 名，放入結果
          */
         TreeMap<Integer, ArrayList<Integer>> map = new TreeMap<>();
